@@ -15,7 +15,7 @@
 
 ```
    .
-   ├── .vscode                                                           // Optional – used to persist VS Code Settings
+   ├── .vscode                                   // Optional – used to persist VS Code Settings
    │   ├── extensions.json
    │   └── settings.json
    ├── public
@@ -26,7 +26,7 @@
    │   ├── manifest.json
    │   └── robots.txt
    ├── src
-   │   ├── components                                                    // React Components go here
+   │   ├── components                             // React Components go here
    │   ├── App.test.tsx
    │   ├── App.tsx
    │   ├── index.tsx
