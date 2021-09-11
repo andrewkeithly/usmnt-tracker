@@ -5,6 +5,7 @@
     "webfonts",
     "usmnt",
     "xsmall",
-    "xxsmall"
+    "xxsmall",
+    "renderer"
   ]
 }
