@@ -4,7 +4,7 @@ import FullLayout from "./layout/FullLayout";
 
 function App() {
   return (
-    <Grommet theme={defaultTheme}>
+    <Grommet background="accent-1" theme={defaultTheme} >
       <FullLayout />
     </Grommet>
   );

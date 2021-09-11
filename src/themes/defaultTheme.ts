@@ -18,7 +18,7 @@ export const defaultTheme = {
         dark: "rgba(255,255,255,0.33)",
         light: "rgba(0,0,0,0.33)",
       },
-      brand: "#0072c6",
+      brand: "#c2002f",
       control: {
         dark: "#f8f8f8",
         light: "#444444",
@@ -33,7 +33,7 @@ export const defaultTheme = {
       white: "#FFFFFF",
       "accent-1": "#fa6800",
       "accent-2": "#128023",
-      "accent-3": "#0050ef",
+      "accent-3": "#212844",
       "accent-4": "#d80073",
       "dark-1": "#333333",
       "dark-2": "#555555",
@@ -181,7 +181,7 @@ export const defaultTheme = {
     hover: {
       background: {
         dark: "#0093ff",
-        light: "#003967",
+        light: "#212844",
       },
       color: {
         dark: "#333333",
@@ -229,7 +229,7 @@ export const defaultTheme = {
     "fontWeight": 600,
     "color": {
       "dark": "#ffffff",
-      "light": "#0078D4"
+      "light": "#212844"
     },
     "hover": {
       "textDecoration": "underline"
