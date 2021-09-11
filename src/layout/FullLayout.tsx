@@ -1,4 +1,4 @@
-import { Box, Grid } from "grommet";
+import { Grid, Nav, Box } from "grommet";
 
 const grid = {
   areas: [
@@ -14,7 +14,7 @@ const grid = {
 const FullLayout = () => {
   return (
     <Grid areas={grid.areas} columns={grid.columns} rows={grid.rows} gap={grid.gap}>
-      <Box gridArea="nav" background="accent-2" />
+      <Nav gridArea="nav" background="accent-4" direction="row" />
       <Box gridArea="main" background="brand" />
       <Box gridArea="foot" background="accent-1" />
     </Grid>

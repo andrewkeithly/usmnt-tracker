@@ -8,7 +8,8 @@
 - [ ] build out UI
 - [ ] read in data either locally or from a service
 - [ ] create accounts
-- [ ] formation editor
+- [ ] formation editor module
+- [ ] containerize development
 - [ ] ...
 
 ### File Structure
