@@ -1,10 +1,12 @@
-import React from "react";
+import { Grommet } from "grommet";
+import { defaultTheme } from "./themes/defaultTheme";
+import FullLayout from "./layout/FullLayout";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
+    <Grommet theme={defaultTheme}>
+      <FullLayout />
+    </Grommet>
   );
 }
 

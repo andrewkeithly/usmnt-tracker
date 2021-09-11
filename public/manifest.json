@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "USMNT Tracker",
+  "name": "A USMNT (United States Men's National Team) website for tracking prospects.",
   "icons": [
     {
       "src": "favicon.ico",

@@ -10,9 +10,12 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "grommet": "^2.17.5",
+    "grommet-icons": "^4.6.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "styled-components": "^5.3.1",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
@@ -34,21 +37,31 @@
     "singleQuote": false
   },
   "eslintConfig": {
+    "ignorePatterns": [
+      "coverage/**",
+      "node_modules/**",
+      "public/*.html",
+      "!src/**"
+    ],
     "extends": [
       "react-app",
       "react-app/jest",
       "prettier"
     ],
-    "rules": {
-    },
+    "rules": {},
     "overrides": [
       {
         "files": [
           "**/*.ts?(x)"
         ],
-        "rules": {
-        }
+        "rules": {}
       }
+    ]
+  },
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "src/index.tsx",
+      "src/reportWebVitals.ts"
     ]
   },
   "browserslist": {
