@@ -1,3 +1,4 @@
+[![Build](https://github.com/andrewkeithly/usmnt-tracker/actions/workflows/build.yml/badge.svg)](https://github.com/andrewkeithly/usmnt-tracker/actions/workflows/build.yml)
 # USMNT Tracker
 
 > This is an app for tracking the United States Men's National (soccer/association football) team prospects.
