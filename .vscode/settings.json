@@ -2,10 +2,12 @@
   "cSpell.words": [
     "browserslist",
     "Keithly",
-    "webfonts",
+    "renderer",
     "usmnt",
+    "webfonts",
+    "xlarge",
     "xsmall",
-    "xxsmall",
-    "renderer"
+    "xxlarge",
+    "xxsmall"
   ]
 }
