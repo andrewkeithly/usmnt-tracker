@@ -37,6 +37,12 @@
     "singleQuote": false
   },
   "eslintConfig": {
+    "ignorePatterns": [
+      "coverage/**",
+      "node_modules/**",
+      "public/*.html",
+      "!src/**"
+    ],
     "extends": [
       "react-app",
       "react-app/jest",
@@ -50,6 +56,12 @@
         ],
         "rules": {}
       }
+    ]
+  },
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "src/index.tsx",
+      "src/reportWebVitals.ts"
     ]
   },
   "browserslist": {
