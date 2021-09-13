@@ -20,20 +20,20 @@ const url = oauth2Client.generateAuthUrl({
 // This will provide an object with the access_token and refresh_token.
 // Save these somewhere safe so they can be used at a later time.
 export const authenticateGoogleAPI = async () => {
-  const { tokens } = await oauth2Client.getToken(code);
+  const { tokens } = await oauth2Client.getToken(url);
   oauth2Client.setCredentials(tokens);
 };
 
-const googleSheets = google.sheets({
-  version: "v4",
-  auth: "temp",
-});
+// const googleSheets = google.sheets({
+//   version: "v4",
+//   auth: "temp",
+// });
 
-const sheetsParams = {
-  sheetsId: "17ED3JuIk1TLJiOo2IMKSAcM6s9ZJG0jS8Z5NMOtMJtA",
-};
+// const sheetsParams = {
+//   sheetsId: "17ED3JuIk1TLJiOo2IMKSAcM6s9ZJG0jS8Z5NMOtMJtA",
+// };
 
-export const getSheetsURL = async () => {
-  const res = await googleSheets.spreadsheets.get(sheetsParams);
-  console.log(`The sheets url is ${res.data.url}`);
-};
+// export const getSheetsURL = async () => {
+//   const res = await googleSheets.spreadsheets.get(sheetsParams);
+//   console.log(`The sheets url is ${res.data.url}`);
+// };

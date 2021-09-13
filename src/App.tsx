@@ -1,11 +1,14 @@
 import { Grommet } from "grommet";
 import { defaultTheme } from "./themes/defaultTheme";
-import FullLayout from "./layout/FullLayout";
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from "./Routes";
 
 function App() {
   return (
     <Grommet theme={defaultTheme}>
-      <FullLayout />
+      <Router>
+        <Routes />
+      </Router>
     </Grommet>
   );
 }
