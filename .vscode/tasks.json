@@ -1,0 +1,48 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "start",
+			"problemMatcher":  {
+				"owner": "custom",   // This is not needed but, required by the problemMatcher Object
+				"pattern": {
+					"regexp": "^$"     // This is not needed but, required by the problemMatcher Object
+				},
+				"background": {
+					"activeOnStart": true,
+					"beginsPattern": "Compiling...",  // Signals the begin of the Task
+					"endsPattern": "Compiled .*"      // Signals that now the initialization of the task is complete
+				}
+		 },
+			"label": "npm: start",
+			"detail": "react-scripts start",
+			"isBackground": true,
+		},
+		{
+			"type": "npm",
+			"script": "test",
+			"problemMatcher": {
+				"owner": "custom",   // This is not needed but, required by the problemMatcher Object
+				"pattern": {
+					"regexp": "^$"     // This is not needed but, required by the problemMatcher Object
+				},
+				"background": {
+					"activeOnStart": true,
+					"beginsPattern": "Compiling...",  // Signals the begin of the Task
+					"endsPattern": "Compiled .*"      // Signals that now the initialization of the task is complete
+				}
+			},
+			"label": "npm: test",
+			"detail": "react-scripts test",
+			"isBackground": true,
+		},
+		{ // Promp to terminate node process when debugger closes
+			"label": "postDebugKill",
+			"type": "process",
+			"command":"${command:workbench.action.tasks.terminate}",
+			"isBackground": true,
+	 },
+	]
+	
+}
