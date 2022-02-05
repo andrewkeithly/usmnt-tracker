@@ -1,8 +1,9 @@
+import SheetsBox from "../components/SheetsBox/SheetsBox";
 import { Box, Grid } from "grommet";
 
 const grid = {
   areas: [
-    { name: "nav", start:  [0, 0], end: [1, 0] },
+    { name: "nav", start: [0, 0], end: [1, 0] },
     { name: "main", start: [0, 1], end: [1, 1] },
     { name: "foot", start: [0, 2], end: [1, 2] },
   ],
@@ -13,9 +14,16 @@ const grid = {
 
 const FullLayout = () => {
   return (
-    <Grid areas={grid.areas} columns={grid.columns} rows={grid.rows} gap={grid.gap}>
+    <Grid
+      areas={grid.areas}
+      columns={grid.columns}
+      rows={grid.rows}
+      gap={grid.gap}
+    >
       <Box gridArea="nav" background="accent-2" />
-      <Box gridArea="main" background="brand" />
+      <Box gridArea="main" background="brand">
+        <SheetsBox />
+      </Box>
       <Box gridArea="foot" background="accent-1" />
     </Grid>
   );
