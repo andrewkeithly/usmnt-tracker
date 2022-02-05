@@ -1,18 +1,16 @@
 import { useCallback, useEffect, useState } from "react";
 import { Box } from "grommet";
-import { getSheet } from "../../api/GoogleAPI";
-
-// type Props = {};
+import { getSheetAxios } from "../../api/GoogleAPI";
 
 const SheetsBox = () => {
   const [sheet, setSheet] = useState([]);
 
   const fetchData = useCallback(() => {
-    Promise.all(
-      [getSheet()]
-    ).then((values) => {
-      setSheet(values?.data?.item);
-    });
+    Promise.all([getSheetAxios()].map((p) => p.catch((e) => e))).then(
+      (values) => {
+        setSheet(values[0]?.data?.values);
+      }
+    );
   }, []);
 
   useEffect(() => {
